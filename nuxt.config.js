@@ -11,7 +11,7 @@ export default {
   */
   target: 'static',
   router: {
-    base: '/xrpcalculator/'
+    base: 'xrpcalculator'
   },
   /*
   ** Headers of the page

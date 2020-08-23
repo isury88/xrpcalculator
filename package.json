@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
     "start": "nuxt start",
     "generate": "nuxt generate"
   },
@@ -17,6 +17,7 @@
   "devDependencies": {
     "@nuxtjs/style-resources": "^1.0.0",
     "node-sass": "^4.14.1",
+    "push-dir": "^0.4.1",
     "sass-loader": "^9.0.3"
   }
 }

@@ -41,7 +41,7 @@ export default {
    ** Plugins to load before mounting the App
    ** https://nuxtjs.org/guide/plugins
    */
-  plugins: ["~plugins/filters.js"],
+  plugins: ["~plugins/filters.js", { src: "~plugins/ga.js", mode: "client" }],
   /*
    ** Auto import components
    ** See https://nuxtjs.org/api/configuration-components

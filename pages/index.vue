@@ -6,13 +6,35 @@
       <div class="columns">
         <div class="column is-6 is-offset-3">
           <b-field custom-class="is-white" label="Units of XRP held:">
-            <b-input v-model="holdings" type="number" min="0" max="9999999999" placeholder="Units of XRP held" size="is-medium" icon="currency-usd"></b-input>
+            <b-input
+              v-model="holdings"
+              type="number"
+              min="0"
+              max="9999999999"
+              placeholder="Units of XRP held"
+              size="is-medium"
+              icon="account"
+            ></b-input>
           </b-field>
           <b-field custom-class="is-white" label="Average Price Paid Per XRP:">
-            <b-input v-model="averagePrice" type="number" step="any" placeholder="Average Price Paid Per XRP" size="is-medium" icon="currency-usd"></b-input>
+            <b-input
+              v-model="averagePrice"
+              type="number"
+              step="any"
+              placeholder="Average Price Paid Per XRP"
+              size="is-medium"
+              icon="currency-usd"
+            ></b-input>
           </b-field>
           <b-field custom-class="is-white" label="Price you think XRP will reach:">
-            <b-input v-model="futurePrice" type="number" step="any" placeholder="Price you think XRP will reach" size="is-medium" icon="currency-usd"></b-input>
+            <b-input
+              v-model="futurePrice"
+              type="number"
+              step="any"
+              placeholder="Price you think XRP will reach"
+              size="is-medium"
+              icon="currency-usd"
+            ></b-input>
           </b-field>
           <div class="message is-info">
             <div class="message-header centered">Your Original holding value:</div>
@@ -40,35 +62,35 @@
 
 <script>
 export default {
-  name: 'HomePage',
+  name: "HomePage",
 
   data: () => {
     return {
       averagePrice: "",
       holdings: "",
       futurePrice: "",
-      livePrice: ''
-    }
+      livePrice: "",
+    };
   },
   mounted() {
     this.getPrice();
   },
   methods: {
     originalHoldingValue() {
-      return this.holdings * this.averagePrice
+      return this.holdings * this.averagePrice;
     },
     currentHoldingValue() {
-      return this.holdings * this.livePrice.USD
+      return this.holdings * this.livePrice.USD;
     },
     potentialReturn() {
-      return this.holdings * this.futurePrice
+      return this.holdings * this.futurePrice;
     },
     async getPrice() {
-      let res = await this.$axios.get()
-      return this.livePrice = res.data
-    }
-  }
-}
+      let res = await this.$axios.get();
+      return (this.livePrice = res.data);
+    },
+  },
+};
 </script>
 <style lang="scss">
 @import "/assets/scss/mystyles.scss";
@@ -77,7 +99,7 @@ export default {
   margin-top: 3rem;
 }
 .section {
-  background-image: url('~assets/img/xrp-logo.svg');
+  background-image: url("~assets/img/xrp-logo.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -92,6 +114,6 @@ export default {
   border: 1px solid #000000;
   border-radius: 15px;
   padding: 30px 15px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 </style>

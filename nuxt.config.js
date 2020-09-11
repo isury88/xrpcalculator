@@ -38,13 +38,13 @@ export default {
       {
         hid: "og:image",
         name: "og:image",
-        content: "https://xrpprofitcalculators.com/assets/img/xrp-logo.svg"
+        content: "/assets/img/xrp-social.jpg"
       },
       { hid: "og:type", name: "og:type", content: "article" },
       {
         hide: "twitter:card",
         name: "twitter:card",
-        content: "https://xrpprofitcalculators.com/assets/img/xrp-logo.svg"
+        content: "/assets/img/xrp-social.jpg"
       },
       {
         hide: "twitter:site",

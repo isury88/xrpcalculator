@@ -17,16 +17,41 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    title: process.env.npm_package_name || "",
+    title: "XRP Profit Calculator" || "",
     meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         hid: "description",
         name: "description",
-        content: process.env.npm_package_description || ""
+        content: "A simple tool to calculate your XRP holdings"
+      },
+      { hid: "og:title", name: "og:title", content: "XRP Profit Calculator" },
+      {
+        hid: "og:description",
+        name: "og:description",
+        content: "A simple tool to calculate your XRP holdings"
+      },
+      {
+        hid: "og:url",
+        name: "og:url",
+        content: "https://xrpprofitcalculators.com"
+      },
+      {
+        hid: "og:image",
+        name: "og:image",
+        content: "https://xrpprofitcalculators.com/assets/img/xrp-logo.svg"
+      },
+      { hid: "og:type", name: "og:type", content: "article" },
+      {
+        hide: "twitter:card",
+        name: "twitter:card",
+        content: "https://xrpprofitcalculators.com/assets/img/xrp-logo.svg"
+      },
+      {
+        hide: "twitter:site",
+        name: "twitter:site",
+        content: "/assets/img/xrp-logo.svg"
       }
-    ],
+    ].filter(x => x.content),
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
   /*

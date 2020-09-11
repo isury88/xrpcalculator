@@ -1,6 +1,14 @@
 <template>
   <section class="section has-text-centered">
     <div class="container">
+      <a href="https://shop.ledger.com/pages/back-to-school?r=e75c94641010">
+        <img
+          width="728"
+          height="90"
+          alt="Back to school - Get 20% Off"
+          src="https://www.ledgerwallet.com/images/promo/banners/ledger_banner_7-2-8x9-0.jpg"
+        />
+      </a>
       <h1 class="title is-1">XRP Profit Calculator</h1>
       <h2 class="subtitle is-4">A simple tool to calculate your XRP holdings</h2>
       <div class="columns">
@@ -73,6 +81,14 @@
           </div>
         </div>
       </div>
+      <a href="https://shop.ledger.com/pages/back-to-school?r=e75c94641010">
+        <img
+          width="728"
+          height="90"
+          alt="Back to school - Get 20% Off"
+          src="https://www.ledgerwallet.com/images/promo/banners/ledger_banner_7-2-8x9-0.jpg"
+        />
+      </a>
     </div>
   </section>
 </template>

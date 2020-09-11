@@ -26,6 +26,23 @@
               icon="currency-usd"
             ></b-input>
           </b-field>
+          <b-field custom-class="is-white" label="Percentage of holdings to sell">
+            <b-input
+              v-model="percentage"
+              type="number"
+              size="is-medium"
+              icon="percent-outline"
+              placeholder="Percentage of holdings to sell"
+            ></b-input>
+          </b-field>
+          <b-field>
+            <b-slider
+              tooltip-type="is-black"
+              track-type="is-black"
+              size="is-large"
+              v-model="percentage"
+            ></b-slider>
+          </b-field>
           <b-field custom-class="is-white" label="Price you think XRP will reach:">
             <b-input
               v-model="futurePrice"
@@ -70,6 +87,7 @@ export default {
       holdings: "",
       futurePrice: "",
       livePrice: "",
+      percentage: 100,
     };
   },
   mounted() {
@@ -83,7 +101,7 @@ export default {
       return this.holdings * this.livePrice.USD;
     },
     potentialReturn() {
-      return this.holdings * this.futurePrice;
+      return ((this.holdings * this.percentage) / 100) * this.futurePrice;
     },
     async getPrice() {
       let res = await this.$axios.get();
@@ -115,5 +133,8 @@ export default {
   border-radius: 15px;
   padding: 30px 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.b-slider.is-primary .b-slider-fill {
+  background: $title-color !important;
 }
 </style>

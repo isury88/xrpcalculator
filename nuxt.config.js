@@ -92,6 +92,16 @@ export default {
     "@nuxtjs/style-resources",
     "@nuxtjs/sitemap"
   ],
+  sitemap: {
+    hostname: "https://xrpprofitcalculators.com",
+    lastmod: "2020-09-12",
+    sitemaps: [
+      {
+        path: "/sitemap.xml",
+        gzip: true
+      }
+    ]
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options

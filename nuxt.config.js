@@ -38,18 +38,22 @@ export default {
       {
         hid: "og:image",
         name: "og:image",
-        content: "~/assets/img/xrp-social.jpg"
+        content: "/assets/img/xrp-social.jpg"
       },
       { hid: "og:type", name: "og:type", content: "article" },
       {
         hide: "twitter:card",
         name: "twitter:card",
-        content: "~/assets/img/xrp-social.jpg"
+        content: "/assets/img/xrp-social.jpg"
       },
       {
         hide: "twitter:site",
         name: "twitter:site",
-        content: "~/assets/img/xrp-social.jpg"
+        content: "/assets/img/xrp-social.jpg"
+      },
+      {
+        name: "google-site-verification",
+        content: "Du2p7OYZSgM50YF9cMGPa98sNPYxgszYqoLGE_Rl26Q"
       }
     ].filter(x => x.content),
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]

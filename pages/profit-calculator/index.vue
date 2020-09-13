@@ -10,12 +10,12 @@
         />
       </a>
       <v-col cols="12" class="text-center mb-3">
-        <v-btn class="mx-3" href="/" dark color="primary" type="submit">
+        <v-btn class="mx-3" to="/" dark color="primary" type="submit">
           Home
         </v-btn>
         <v-btn
           class="mx-3"
-          href="/profit-planner"
+          to="/profit-planner"
           dark
           color="primary"
           type="submit"

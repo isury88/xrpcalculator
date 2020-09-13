@@ -50,7 +50,7 @@
             <v-col cols="12" xl="10" class="text-center">
               <v-btn
                 class="mx-3 my-3"
-                href="/profit-calculator"
+                to="/profit-calculator"
                 dark
                 color="primary"
                 type="submit"
@@ -59,7 +59,7 @@
               </v-btn>
               <v-btn
                 class="mx-3 my-3"
-                href="/profit-planner"
+                to="/profit-planner"
                 dark
                 color="primary"
                 type="submit"

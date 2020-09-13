@@ -56,7 +56,21 @@ export default {
         content: "Du2p7OYZSgM50YF9cMGPa98sNPYxgszYqoLGE_Rl26Q"
       }
     ].filter(x => x.content),
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [
+      {
+        href:
+          "https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900",
+        rel: "stylesheet"
+      }
+    ],
+    link: [
+      {
+        href:
+          "https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css",
+        rel: "stylesheet"
+      }
+    ]
   },
   /*
    ** Global CSS
@@ -79,7 +93,7 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: [],
+  buildModules: ["@nuxtjs/vuetify"],
   /*
    ** Nuxt.js modules
    */

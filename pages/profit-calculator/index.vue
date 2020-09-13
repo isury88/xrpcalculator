@@ -167,6 +167,7 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding-top: 0;
   // background-color: rgba($color: #027196, $alpha: .3);
 }
 .is-white {

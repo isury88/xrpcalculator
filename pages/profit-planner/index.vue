@@ -213,7 +213,9 @@ export default {
         unitInstance: this.$refs.holdings.value - this.totalHoldingsLeft,
         percentageInstance: this.$refs.percentage.value,
         futureInstance: this.$refs.futurePrice.value,
-        result: this.$refs.holdings.value * this.$refs.futurePrice.value
+        result:
+          (this.$refs.holdings.value - this.totalHoldingsLeft) *
+          this.$refs.futurePrice.value
       });
 
       this.futurePrice = null;

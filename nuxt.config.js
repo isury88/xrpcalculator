@@ -70,6 +70,13 @@ export default {
           "https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css",
         rel: "stylesheet"
       }
+    ],
+    script: [
+      {
+        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js",
+        "data-ad-client": "ca-pub-3626958281642949",
+        async: true
+      }
     ]
   },
   /*

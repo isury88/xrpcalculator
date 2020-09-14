@@ -35,13 +35,13 @@ export default {
       type: Number
     },
     percentageCalculated: {
-      type: Number
+      type: String
     },
     pricePrediction: {
-      type: Number
+      type: String
     },
     result: {
-      type: Number
+      type: String
     }
   }
 };

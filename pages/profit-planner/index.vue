@@ -159,11 +159,23 @@
           <v-col cols="12" xl="10">
             <card-element
               :unitHeld="Number(card.unitInstance)"
-              :result="Number(card.result) | toCurrency()"
-              :pricePrediction="Number(card.futureInstance)"
-              :percentageCalculated="Number(card.percentageInstance)"
+              :result="card.result | toCurrency()"
+              :pricePrediction="Number(card.futureInstance) | toCurrency()"
+              :percentageCalculated="Number(card.percentageInstance) + '%'"
             >
             </card-element>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col cols="12" xl="10">
+            <total-result-summary
+              v-show="cards.length > 0"
+              :totalUnitToSell="getCardsSum()"
+              :totalPercentage="getPercentageSum() + '%'"
+              averagePricePrediction=""
+              :totalReturnOfSell="getReturnSum() | toCurrency()"
+            >
+            </total-result-summary>
           </v-col>
         </v-row>
       </v-container>
@@ -173,10 +185,11 @@
 
 <script>
 import CardElement from "@/components/CardElement";
+import TotalResultSummary from "@/components/TotalResultSummary";
 import whiteBg from "../../assets/img/xrp-logo-white.svg";
 import darkBg from "../../assets/img/xrp-logo.svg";
 export default {
-  components: { CardElement },
+  components: { CardElement, TotalResultSummary },
   data: () => {
     return {
       valid: true,
@@ -231,6 +244,30 @@ export default {
     },
     validate() {
       this.$refs.form.validate();
+    },
+    getCardsSum() {
+      let unitInstanceTotal = 0;
+
+      this.cards.forEach(card => {
+        unitInstanceTotal += card["unitInstance"];
+      });
+      return unitInstanceTotal;
+    },
+    getPercentageSum() {
+      let percentageSumTotal = 0;
+
+      this.cards.forEach(card => {
+        percentageSumTotal += Number(card["percentageInstance"]);
+      });
+      return percentageSumTotal;
+    },
+    getReturnSum() {
+      let returnSumTotal = 0;
+
+      this.cards.forEach(card => {
+        returnSumTotal += Number(card["result"]);
+      });
+      return returnSumTotal;
     }
   }
 };

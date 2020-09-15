@@ -133,7 +133,7 @@ export default {
   },
   head() {
     return {
-      title: "XRP Profit Calculators",
+      title: "XRP Planner and Profit Calculator | Fast and Easy to Use....",
       meta: [
         {
           hid: "description",

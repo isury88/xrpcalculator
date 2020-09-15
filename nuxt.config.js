@@ -17,7 +17,7 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    title: "XRP Profit Calculators" || "",
+    title: "XRP Planner and Profit Calculator | Fast and Easy to Use...." || "",
     meta: [
       {
         hid: "description",
@@ -25,7 +25,11 @@ export default {
         content:
           "If you find yourself wondering how the price of XRP will affect your holdings value, check one of the two tools below to help you out. Fast and easy to use."
       },
-      { hid: "og:title", name: "og:title", content: "XRP Profit Calculators" },
+      {
+        hid: "og:title",
+        name: "og:title",
+        content: "XRP Planner and Profit Calculator | Fast and Easy to Use...."
+      },
       {
         hid: "og:description",
         name: "og:description",

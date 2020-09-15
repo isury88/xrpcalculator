@@ -41,7 +41,8 @@
             style="max-width:800px; margin:30px auto"
           >
             If you find yourself wondering how the price of XRP will affect your
-            holdings value, check one of the two below to help you out.
+            holdings value, check one of the two tools below to help you out.
+            Fast and easy to use.
           </h2>
           <v-row justify="end" align="center">
             <span
@@ -138,7 +139,7 @@ export default {
           hid: "description",
           name: "description",
           content:
-            "If you find yourself wondering how the price of XRP will affect your holdings value, check one of the two below to help you out."
+            "If you find yourself wondering how the price of XRP will affect your holdings value, check one of the two tools below to help you out. Fast and easy to use."
         },
         {
           hid: "og:image",

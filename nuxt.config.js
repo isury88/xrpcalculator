@@ -23,14 +23,14 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "If you find yourself wondering how the price of XRP will affect your holdings value, check one of the two below to help you out."
+          "If you find yourself wondering how the price of XRP will affect your holdings value, check one of the two tools below to help you out. Fast and easy to use."
       },
       { hid: "og:title", name: "og:title", content: "XRP Profit Calculators" },
       {
         hid: "og:description",
         name: "og:description",
         content:
-          "If you find yourself wondering how the price of XRP will affect your holdings value, check one of the two below to help you out."
+          "If you find yourself wondering how the price of XRP will affect your holdings value, check one of the two tools below to help you out. Fast and easy to use."
       },
       {
         hid: "og:url",

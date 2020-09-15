@@ -16,7 +16,7 @@
               />
             </a>
             <a
-              class="hidden-md-and-up"
+              class="hidden-lg-and-up"
               href="https://shop.ledger.com/pages/back-to-school?r=e75c94641010"
               ><img
                 width="250"
@@ -25,7 +25,7 @@
                 src="https://www.ledgerwallet.com/images/promo/banners/ledger_banner_2-5-0x1-0-0.jpg"
             /></a>
           </div>
-          <h1 class="text-h5 text-md-h3 text-center">
+          <h1 class="text-h4 text-md-h2 text-center">
             <span
               class="xrp-logo"
               :style="{
@@ -36,8 +36,12 @@
             ></span>
             XRP Planner and Profit Calculator
           </h1>
-          <h2 class="text-h6 text-md-h5 text-center">
-            Pick your service
+          <h2
+            class="text-h6 text-md-h5 text-center"
+            style="max-width:800px; margin:30px auto"
+          >
+            If you find yourself wondering how the price of XRP will affect your
+            holdings value, check one of the two below to help you out.
           </h2>
           <v-row justify="end" align="center">
             <span
@@ -46,27 +50,64 @@
             ></span
             ><v-switch v-model="$vuetify.theme.dark"></v-switch>
           </v-row>
-          <v-row align="center" justify="center">
-            <v-col cols="12" xl="10" class="text-center">
-              <v-btn
-                class="mx-3 my-3"
-                to="/profit-calculator"
-                dark
-                color="primary"
-                type="submit"
+          <v-row
+            align="center"
+            justify="center"
+            style="max-width:900px;margin:0 auto"
+          >
+            <v-card class="mx-auto mb-4 my-3" width="320">
+              <v-img
+                class="white--text align-end"
+                height="250px"
+                :src="profitCalculatorImg"
               >
-                Profit Calculator
-              </v-btn>
-              <v-btn
-                class="mx-3 my-3"
-                to="/profit-planner"
-                dark
-                color="primary"
-                type="submit"
+              </v-img>
+              <v-card-text class="text--primary">
+                <h3 class="text-h5 mb-3">Profit Calculator</h3>
+                <div>
+                  Profit calculator will help you see the value of your original
+                  holdings as well as your future value based on a price
+                  prediction set by you.
+                </div>
+              </v-card-text>
+
+              <v-card-actions>
+                <v-btn
+                  class="mx-3 my-3"
+                  to="/profit-calculator"
+                  dark
+                  color="primary"
+                  type="submit"
+                  >Try This out</v-btn
+                >
+              </v-card-actions>
+            </v-card>
+            <v-card class="mx-auto mb-4 my-3" width="320">
+              <v-img
+                class="white--text align-end"
+                height="250px"
+                :src="plannerCalculatorImg"
               >
-                Profit Planner
-              </v-btn>
-            </v-col>
+              </v-img>
+              <v-card-text class="text--primary">
+                <h3 class="text-h5 mb-3">Profit Planner</h3>
+                <div>
+                  Profit Planner can help you set a breakdown of your holdings
+                  based on the percentage and price you choose to sell.
+                </div>
+              </v-card-text>
+              <v-card-actions>
+                <v-btn
+                  class="mx-3 my-3"
+                  to="/profit-planner"
+                  dark
+                  color="primary"
+                  type="submit"
+                >
+                  Try this out
+                </v-btn>
+              </v-card-actions>
+            </v-card>
           </v-row>
         </v-container>
       </v-main>
@@ -77,11 +118,15 @@
 <script>
 import whiteBg from "../assets/img/xrp-logo-white.svg";
 import darkBg from "../assets/img/xrp-logo.svg";
+import profitImg from "../assets/img/profit-calculator.png";
+import plannerImg from "../assets/img/profit-planner.png";
 export default {
   data: () => {
     return {
       backgroundwhiteBg: `url(${whiteBg})`,
-      backgrounddarkBg: `url(${darkBg})`
+      backgrounddarkBg: `url(${darkBg})`,
+      profitCalculatorImg: profitImg,
+      plannerCalculatorImg: plannerImg
     };
   }
 };

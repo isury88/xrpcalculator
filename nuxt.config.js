@@ -111,7 +111,13 @@ export default {
     "@nuxtjs/axios",
     "@nuxtjs/pwa",
     "@nuxtjs/style-resources",
-    "@nuxtjs/sitemap"
+    "@nuxtjs/sitemap",
+    [
+      "@nuxtjs/google-adsense",
+      {
+        id: "ca-pub-3626958281642949"
+      }
+    ]
   ],
   sitemap: {
     hostname: "https://xrpprofitcalculators.com",

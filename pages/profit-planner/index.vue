@@ -25,7 +25,14 @@
           /></a>
         </div>
         <v-col cols="12" class="text-center mb-3">
-          <v-btn class="mx-3" to="/" dark color="primary" type="submit">
+          <v-btn
+            class="mx-3"
+            to="/"
+            dark
+            color="primary"
+            type="submit"
+            style="margin-bottom: 15px"
+          >
             Home
           </v-btn>
           <v-btn
@@ -34,6 +41,7 @@
             dark
             color="primary"
             type="submit"
+            style="margin-bottom: 15px"
           >
             Profit Calculator
           </v-btn>

@@ -10,20 +10,28 @@
         />
       </a>
       <v-col cols="12" class="text-center mb-3">
-        <v-btn class="mx-3" to="/" dark color="primary" type="submit">
+        <v-btn
+          class="mx-3"
+          to="/"
+          dark
+          color="primary"
+          type="submit"
+          style="margin-bottom: 15px"
+        >
           Home
         </v-btn>
         <v-btn
-          class="mx-3"
+          class="mx-3 mb-3"
           to="/profit-planner"
           dark
           color="primary"
           type="submit"
+          style="margin-bottom: 15px"
         >
           Profit Planner
         </v-btn>
       </v-col>
-      <h1 class="title is-1">XRP Profit Calculator</h1>
+      <h1 class="title is-3 is-md-1">XRP Profit Calculator</h1>
       <h2 class="subtitle is-4">
         A simple tool to calculate your XRP holdings
       </h2>

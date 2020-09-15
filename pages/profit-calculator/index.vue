@@ -132,6 +132,7 @@
 </template>
 
 <script>
+import metaImg from "../../assets/img/xrp-social.jpg";
 export default {
   name: "HomePage",
 

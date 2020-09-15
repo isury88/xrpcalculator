@@ -196,6 +196,7 @@ import CardElement from "@/components/CardElement";
 import TotalResultSummary from "@/components/TotalResultSummary";
 import whiteBg from "../../assets/img/xrp-logo-white.svg";
 import darkBg from "../../assets/img/xrp-logo.svg";
+import metaImg from "../../assets/img/xrp-social.jpg";
 export default {
   components: { CardElement, TotalResultSummary },
   data: () => {

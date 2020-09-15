@@ -17,7 +17,7 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    title: "XRP Profit Calculator" || "",
+    title: "XRP Profit Calculators" || "",
     meta: [
       {
         hid: "description",

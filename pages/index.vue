@@ -120,6 +120,7 @@ import whiteBg from "../assets/img/xrp-logo-white.svg";
 import darkBg from "../assets/img/xrp-logo.svg";
 import profitImg from "../assets/img/profit-calculator.png";
 import plannerImg from "../assets/img/profit-planner.png";
+import metaImg from "../assets/img/xrp-social.jpg";
 export default {
   data: () => {
     return {
@@ -127,6 +128,35 @@ export default {
       backgrounddarkBg: `url(${darkBg})`,
       profitCalculatorImg: profitImg,
       plannerCalculatorImg: plannerImg
+    };
+  },
+  head() {
+    return {
+      title: "XRP Profit Calculators",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "If you find yourself wondering how the price of XRP will affect your holdings value, check one of the two below to help you out."
+        },
+        {
+          hid: "og:image",
+          name: "og:image",
+          content: metaImg
+        },
+        { hid: "og:type", name: "og:type", content: "article" },
+        {
+          hide: "twitter:card",
+          name: "twitter:card",
+          content: metaImg
+        },
+        {
+          hide: "twitter:site",
+          name: "twitter:site",
+          content: metaImg
+        }
+      ]
     };
   }
 };

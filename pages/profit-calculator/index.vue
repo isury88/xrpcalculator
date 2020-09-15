@@ -144,6 +144,35 @@ export default {
       percentage: 100
     };
   },
+  head() {
+    return {
+      title: "XRP Profit Calculators",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "Profit calculator will help you see the value of your original holdings as well as your future value based on a price prediction set by you."
+        },
+        {
+          hid: "og:image",
+          name: "og:image",
+          content: metaImg
+        },
+        { hid: "og:type", name: "og:type", content: "article" },
+        {
+          hide: "twitter:card",
+          name: "twitter:card",
+          content: metaImg
+        },
+        {
+          hide: "twitter:site",
+          name: "twitter:site",
+          content: metaImg
+        }
+      ]
+    };
+  },
   mounted() {
     this.getPrice();
   },

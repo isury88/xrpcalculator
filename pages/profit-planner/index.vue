@@ -218,6 +218,35 @@ export default {
       backgrounddarkBg: `url(${darkBg})`
     };
   },
+  head() {
+    return {
+      title: "XRP Profit Calculators",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "Profit Planner can help you set a breakdown of your holdings based on the percentage and price you choose to sell."
+        },
+        {
+          hid: "og:image",
+          name: "og:image",
+          content: metaImg
+        },
+        { hid: "og:type", name: "og:type", content: "article" },
+        {
+          hide: "twitter:card",
+          name: "twitter:card",
+          content: metaImg
+        },
+        {
+          hide: "twitter:site",
+          name: "twitter:site",
+          content: metaImg
+        }
+      ]
+    };
+  },
   created() {
     this.$vuetify.theme.dark = true;
   },
